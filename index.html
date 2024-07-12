@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIST Cybersecurity Framework (CSF)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .identify {
+            background-color: #ffe6e6;
+        }
+        .protect {
+            background-color: #e6f7ff;
+        }
+        .detect {
+            background-color: #e6ffe6;
+        }
+        .respond {
+            background-color: #fff5e6;
+        }
+        .recover {
+            background-color: #ffe6f7;
+        }
+        .sticky-header {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>NIST Cybersecurity Framework (CSF)</h1>
+    <p>The NIST Cybersecurity Framework (CSF) provides a policy framework of computer security guidance for how private sector organizations can assess and improve their ability to prevent, detect, and respond to cyber attacks. The framework is composed of five primary functions: Identify, Protect, Detect, Respond, and Recover, each of which comprises various categories and subcategories of controls.</p>
+    <table>
+        <thead>
+            <tr class="sticky-header">
+                <th>Function</th>
+                <th>Category</th>
+                <th>Subcategory</th>
+                <th>Example Controls</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="identify">
+                <td>Identify</td>
+                <td>Asset Management (ID.AM)</td>
+                <td>ID.AM-1: Physical devices and systems within the organization are inventoried.</td>
+                <td>Asset Inventory System</td>
+                <td>Maintain an up-to-date inventory of all hardware devices and systems within the organization. Regularly update and review the inventory to ensure accuracy.</td>
+            </tr>
+            <tr class="identify">
+                <td></td>
+                <td></td>
+                <td>ID.AM-2: Software platforms and applications within the organization are inventoried.</td>
+                <td>Software Inventory Tools</td>
+                <td>Use automated tools to regularly scan and document all software applications and platforms in use. Ensure that the inventory is comprehensive and includes all versions and licenses.</td>
+            </tr>
+            <tr class="identify">
+                <td></td>
+                <td>Business Environment (ID.BE)</td>
+                <td>ID.BE-1: The organization’s role in the supply chain is identified and communicated.</td>
+                <td>Supply Chain Mapping</td>
+                <td>Document and communicate the organization's role and dependencies within the supply chain. Regularly review and update the supply chain documentation to reflect changes.</td>
+            </tr>
+            <tr class="identify">
+                <td></td>
+                <td></td>
+                <td>ID.BE-2: The organization’s mission, objectives, stakeholders, and activities are understood and prioritized.</td>
+                <td>Business Impact Analysis</td>
+                <td>Conduct a business impact analysis to understand and prioritize key business functions and their dependencies. Use the analysis to inform risk management and contingency planning.</td>
+            </tr>
+            <tr class="identify">
+                <td></td>
+                <td>Governance (ID.GV)</td>
+                <td>ID.GV-1: Organizational information security policy is established.</td>
+                <td>Information Security Policy</td>
+                <td>Develop, approve, and communicate an organization-wide information security policy. Ensure the policy is regularly reviewed and updated to reflect new security challenges and regulatory requirements.</td>
+            </tr>
+            <tr class="identify">
+                <td></td>
+                <td></td>
+                <td>ID.GV-2: Information security roles and responsibilities are coordinated and aligned with internal roles and external partners.</td>
+                <td>Roles and Responsibilities Matrix</td>
+                <td>Define and document the information security roles and responsibilities across the organization and with external partners. Ensure that these roles are clearly communicated and understood.</td>
+            </tr>
+            <tr class="identify">
+                <td></td>
+                <td>Risk Assessment (ID.RA)</td>
+                <td>ID.RA-1: Asset vulnerabilities are identified and documented.</td>
+                <td>Vulnerability Assessment Tools</td>
+                <td>Conduct regular vulnerability assessments using automated tools and document identified vulnerabilities. Prioritize vulnerabilities based on their potential impact and likelihood of exploitation.</td>
+            </tr>
+            <tr class="identify">
+                <td></td>
+                <td></td>
+                <td>ID.RA-2: Cyber threat intelligence is received from information-sharing forums and sources.</td>
+                <td>Threat Intelligence Feeds</td>
+                <td>Subscribe to and actively monitor threat intelligence feeds to receive up-to-date information on emerging threats. Integrate threat intelligence into the organization's risk management processes.</td>
+            </tr>
+            <tr class="identify">
+                <td></td>
+                <td>Risk Management Strategy (ID.RM)</td>
+                <td>ID.RM-1: Risk management processes are established, managed, and agreed to by organizational stakeholders.</td>
+                <td>Risk Management Framework</td>
+                <td>Develop and implement a comprehensive risk management framework tailored to the organization's needs and risk appetite. Ensure stakeholder engagement and agreement on risk management processes.</td>
+            </tr>
+            <tr class="identify">
+                <td></td>
+                <td></td>
+                <td>ID.RM-2: Organizational risk tolerance is determined and clearly expressed.</td>
+                <td>Risk Tolerance Statements</td>
+                <td>Establish and communicate clear risk tolerance levels to all relevant stakeholders. Regularly review and update risk tolerance statements to reflect changes in the organization's risk profile.</td>
+            </tr>
+            <tr class="protect">
+                <td>Protect</td>
+                <td>Identity Management and Access Control (PR.AC)</td>
+                <td>PR.AC-1: Identities and credentials are issued, managed, verified, revoked, and audited.</td>
+                <td>Identity and Access Management System</td>
+                <td>Implement identity and access management (IAM) solutions to manage user identities and access rights throughout their lifecycle. Regularly audit IAM systems to ensure they are functioning correctly.</td>
+            </tr>
+            <tr class="protect">
+                <td></td>
+                <td></td>
+                <td>PR.AC-2: Physical access to assets is managed and protected.</td>
+                <td>Physical Access Control Systems</td>
+                <td>Use physical access control systems (e.g., key cards, biometric scanners) to secure access to critical facilities and assets. Regularly review and update physical access controls to ensure their effectiveness.</td>
+            </tr>
+            <tr class="protect">
+                <td></td>
+                <td>Awareness and Training (PR.AT)</td>
+                <td>PR.AT-1: All users are informed and trained.</td>
+                <td>Security Awareness Training Programs</td>
+                <td>Conduct regular security awareness training sessions for all employees to educate them on security policies and best practices. Use metrics to measure the effectiveness of training programs.</td>
+            </tr>
+            <tr class="protect">
+                <td></td>
+                <td></td>
+                <td>PR.AT-2: Privileged users understand their roles and responsibilities.</td>
+                <td>Specialized Training for Privileged Users</td>
+                <td>Provide targeted training for users with privileged access to ensure they understand their specific roles and responsibilities. Regularly review and update training materials to address new threats and technologies.</td>
+            </tr>
+            <tr class="protect">
+                <td></td>
+                <td>Data Security (PR.DS)</td>
+                <td>PR.DS-1: Data-at-rest is protected.</td>
+                <td>Encryption Solutions for Data-at-Rest</td>
+                <td>Implement encryption technologies to protect sensitive data stored on physical media and databases. Regularly review and update encryption practices to ensure they meet current standards.</td>
+            </tr>
+            <tr class="protect">
+                <td></td>
+                <td></td>
+                <td>PR.DS-2: Data-in-transit is protected.</td>
+                <td>Secure Communication Protocols (e.g., TLS, IPsec)</td>
+                <td>Use encryption protocols to secure data transmitted over networks, ensuring its confidentiality and integrity. Regularly review and update communication security practices to address new threats.</td>
+            </tr>
+            <tr class="protect">
+                <td></td>
+                <td>Information Protection Processes and Procedures (PR.IP)</td>
+                <td>PR.IP-1: A baseline configuration of information technology/industrial control systems is created and maintained.</td>
+                <td>Baseline Configuration Management Tools</td>
+                <td>Establish and maintain secure baseline configurations for all IT and industrial control systems. Regularly review and update baseline configurations to reflect changes in technology and threats.</td>
+            </tr>
+            <tr class="protect">
+                <td></td>
+                <td></td>
+                <td>PR.IP-2: A system development life cycle to manage systems is implemented.</td>
+                <td>System Development Life Cycle (SDLC)</td>
+                <td>Follow a formal SDLC that includes security considerations at each stage of system development and deployment. Regularly review and update SDLC processes to ensure they incorporate the latest security best practices.</td>
+            </tr>
+            <tr class="protect">
+                <td></td>
+                <td>Maintenance (PR.MA)</td>
+                <td>PR.MA-1: Maintenance and repair of organizational assets are performed and logged.</td>
+                <td>Maintenance Logs</td>
+                <td>Keep detailed logs of all maintenance activities performed on critical assets, including dates, personnel involved, and actions taken. Regularly review and audit maintenance logs to ensure accuracy and compliance.</td>
+            </tr>
+            <tr class="protect">
+                <td></td>
+                <td></td>
+                <td>PR.MA-2: Remote maintenance of organizational assets is approved, logged, and performed in a manner that prevents unauthorized access.</td>
+                <td>Secure Remote Maintenance Procedures</td>
+                <td>Implement secure methods for remote maintenance, including the use of VPNs and logging all remote maintenance sessions. Regularly review and update remote maintenance procedures to address new threats.</td>
+            </tr>
+            <tr class="protect">
+                <td></td>
+                <td>Protective Technology (PR.PT)</td>
+                <td>PR.PT-1: Audit/log records are determined, documented, implemented, and reviewed.</td>
+                <td>Audit Log Management Systems</td>
+                <td>Establish and maintain audit logs for all critical systems, ensuring logs are regularly reviewed for suspicious activities. Regularly review and update audit log management practices to ensure they remain effective.</td>
+            </tr>
+            <tr class="protect">
+                <td></td>
+                <td></td>
+                <td>PR.PT-2: Removable media is protected and its use restricted according to policy.</td>
+                <td>Removable Media Controls</td>
+                <td>Implement policies and controls to restrict and secure the use of removable media, such as USB drives. Regularly review and update removable media policies to address new security threats.</td>
+            </tr>
+            <tr class="detect">
+                <td>Detect</td>
+                <td>Anomalies and Events (DE.AE)</td>
+                <td>DE.AE-1: A baseline of network operations and expected data flows for users and systems is established and managed.</td>
+                <td>Network Baseline Monitoring Tools</td>
+                <td>Use network monitoring tools to establish normal operational baselines and detect anomalies. Regularly review and update network baselines to ensure they reflect current operations and threats.</td>
+            </tr>
+            <tr class="detect">
+                <td></td>
+                <td></td>
+                <td>DE.AE-2: Detected events are analyzed to understand attack targets and methods.</td>
+                <td>Event Analysis and Correlation Tools</td>
+                <td>Implement tools to analyze and correlate detected security events to understand attack vectors and targets. Regularly review and update event analysis processes to ensure they remain effective.</td>
+            </tr>
+            <tr class="detect">
+                <td></td>
+                <td>Security Continuous Monitoring (DE.CM)</td>
+                <td>DE.CM-1: The network is monitored to detect potential cybersecurity events.</td>
+                <td>Continuous Network Monitoring Solutions</td>
+                <td>Deploy continuous monitoring solutions to detect and respond to security events in real-time. Regularly review and update monitoring solutions to address new threats and vulnerabilities.</td>
+            </tr>
+            <tr class="detect">
+                <td></td>
+                <td></td>
+                <td>DE.CM-2: The physical environment is monitored to detect potential cybersecurity events.</td>
+                <td>Physical Security Monitoring Systems</td>
+                <td>Use physical security systems, such as CCTV and motion sensors, to monitor and detect unauthorized access or other security events. Regularly review and update physical security monitoring practices to ensure they remain effective.</td>
+            </tr>
+            <tr class="detect">
+                <td></td>
+                <td>Detection Processes (DE.DP)</td>
+                <td>DE.DP-1: Roles and responsibilities for detection are well defined.</td>
+                <td>Incident Response Team Roles and Responsibilities</td>
+                <td>Define and document roles and responsibilities for the incident response team to ensure clear accountability. Regularly review and update roles and responsibilities to address changes in the organization and threat landscape.</td>
+            </tr>
+            <tr class="detect">
+                <td></td>
+                <td></td>
+                <td>DE.DP-2: Detection activities comply with all applicable requirements.</td>
+                <td>Compliance Monitoring Tools</td>
+                <td>Ensure that detection processes and tools comply with relevant legal, regulatory, and organizational requirements. Regularly review and update compliance monitoring practices to ensure they remain effective.</td>
+            </tr>
+            <tr class="respond">
+                <td>Respond</td>
+                <td>Response Planning (RS.RP)</td>
+                <td>RS.RP-1: Response plan is executed during or after an incident.</td>
+                <td>Incident Response Plan</td>
+                <td>Develop, implement, and regularly test an incident response plan to ensure effective response to security incidents. Regularly review and update the incident response plan to address new threats and vulnerabilities.</td>
+            </tr>
+            <tr class="respond">
+                <td></td>
+                <td>Communications (RS.CO)</td>
+                <td>RS.CO-1: Personnel know their roles and order of operations when a response is needed.</td>
+                <td>Communication Plans for Incident Response</td>
+                <td>Provide clear communication plans and train personnel on their roles and responsibilities during incident response. Regularly review and update communication plans to ensure they remain effective.</td>
+            </tr>
+            <tr class="respond">
+                <td></td>
+                <td></td>
+                <td>RS.CO-2: Incidents are reported consistent with established criteria.</td>
+                <td>Incident Reporting Procedures</td>
+                <td>Establish criteria and procedures for reporting incidents to relevant stakeholders and authorities. Regularly review and update incident reporting procedures to ensure they remain effective.</td>
+            </tr>
+            <tr class="respond">
+                <td></td>
+                <td>Analysis (RS.AN)</td>
+                <td>RS.AN-1: Notifications from detection systems are investigated.</td>
+                <td>Incident Analysis Tools</td>
+                <td>Investigate alerts and notifications from detection systems to determine their validity and impact. Regularly review and update incident analysis processes to ensure they remain effective.</td>
+            </tr>
+            <tr class="respond">
+                <td></td>
+                <td></td>
+                <td>RS.AN-2: The impact of the incident is understood.</td>
+                <td>Impact Assessment Processes</td>
+                <td>Conduct thorough impact assessments to understand the scope and severity of security incidents. Use the results to inform response and recovery efforts.</td>
+            </tr>
+            <tr class="respond">
+                <td></td>
+                <td>Mitigation (RS.MI)</td>
+                <td>RS.MI-1: Incidents are contained.</td>
+                <td>Containment Strategies</td>
+                <td>Implement strategies to contain and limit the spread of security incidents. Regularly review and update containment strategies to address new threats and vulnerabilities.</td>
+            </tr>
+            <tr class="respond">
+                <td></td>
+                <td></td>
+                <td>RS.MI-2: Incidents are mitigated.</td>
+                <td>Root Cause Analysis and Mitigation Measures</td>
+                <td>Apply root cause analysis and mitigation measures to address the underlying causes of incidents and prevent recurrence. Regularly review and update mitigation measures to ensure they remain effective.</td>
+            </tr>
+            <tr class="respond">
+                <td></td>
+                <td>Improvements (RS.IM)</td>
+                <td>RS.IM-1: Response plans incorporate lessons learned.</td>
+                <td>Post-Incident Review and Improvement Processes</td>
+                <td>Review and update incident response plans based on lessons learned from past incidents. Regularly conduct post-incident reviews to identify areas for improvement.</td>
+            </tr>
+            <tr class="respond">
+                <td></td>
+                <td></td>
+                <td>RS.IM-2: Response strategies are updated.</td>
+                <td>Continuous Improvement of Response Strategies</td>
+                <td>Continuously improve response strategies to adapt to evolving threats and vulnerabilities. Regularly review and update response strategies to ensure they remain effective.</td>
+            </tr>
+            <tr class="recover">
+                <td>Recover</td>
+                <td>Recovery Planning (RC.RP)</td>
+                <td>RC.RP-1: Recovery plan is executed during or after a cybersecurity incident.</td>
+                <td>Disaster Recovery Plan</td>
+                <td>Develop, implement, and regularly test disaster recovery plans to ensure timely restoration of critical functions after incidents. Regularly review and update recovery plans to address new threats and vulnerabilities.</td>
+            </tr>
+            <tr class="recover">
+                <td></td>
+                <td>Improvements (RC.IM)</td>
+                <td>RC.IM-1: Recovery plans incorporate lessons learned.</td>
+                <td>Recovery Plan Review and Updates</td>
+                <td>Incorporate feedback and lessons learned from recovery efforts into future plans to improve effectiveness. Regularly review and update recovery plans based on lessons learned from past incidents.</td>
+            </tr>
+            <tr class="recover">
+                <td></td>
+                <td></td>
+                <td>RC.IM-2: Recovery strategies are updated.</td>
+                <td>Regular Review and Update of Recovery Strategies</td>
+                <td>Regularly review and update recovery strategies to reflect changes in the business environment and technology landscape. Ensure recovery strategies remain effective in addressing new threats and vulnerabilities.</td>
+            </tr>
+            <tr class="recover">
+                <td></td>
+                <td>Communications (RC.CO)</td>
+                <td>RC.CO-1: Public relations are managed.</td>
+                <td>Crisis Communication Plans</td>
+                <td>Develop and implement communication plans to manage public relations during and after a cybersecurity incident. Regularly review and update communication plans to ensure they remain effective.</td>
+            </tr>
+            <tr class="recover">
+                <td></td>
+                <td></td>
+                <td>RC.CO-2: Reputation after an event is repaired.</td>
+                <td>Reputation Management Strategies</td>
+                <td>Take proactive steps to repair and restore the organization's reputation following a cybersecurity incident. Regularly review and update reputation management strategies to ensure they remain effective.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
